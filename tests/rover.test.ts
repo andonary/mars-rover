@@ -10,7 +10,7 @@ describe('Rover does not move', () => {
         expect(rover).toBeDefined();
     });
 
-    test('When: User ask rover position and direction', () => {
+    test('When: Navigator ask rover position and direction', () => {
         position = rover.getPosition();
         expect(position).toBeDefined();
         direction = rover.getDirection();
@@ -22,7 +22,7 @@ describe('Rover does not move', () => {
         expect(position).toEqual(initialPosition);
     });
 
-    test('Then: direction of rover is north', () => {
+    test('Then: direction of rover is default direction', () => {
         const defaultDirection: string = new Direction().getValue();
         expect(direction).toEqual(defaultDirection);
     });
