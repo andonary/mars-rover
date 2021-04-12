@@ -1,5 +1,6 @@
 import {Position} from "./position";
 import {Direction} from "./direction";
+import {CommandEnum} from "./commands";
 
 export class Rover {
     private x: number;
@@ -12,5 +13,13 @@ export class Rover {
 
     getDirection() {
         return new Direction(this.direction).getValue();
+    }
+
+    commands(commands: CommandEnum) {
+        switch (commands) {
+            case CommandEnum.forward:
+                this.y = 1;
+                break;
+        }
     }
 }
