@@ -48,3 +48,5 @@ describe('Rover moves only forward', () => {
         expect(position).not.toEqual(initialPosition);
     });
 });
+
+// TODO: move backward, left, right and get direction details
