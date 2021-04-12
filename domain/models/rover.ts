@@ -2,8 +2,8 @@ import {Position} from "./position";
 import {Direction} from "./direction";
 
 export class Rover {
-    private x: number = 0;
-    private y: number = 0;
+    private x: number;
+    private y: number;
     private direction: string;
 
     getPosition() {
