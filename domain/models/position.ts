@@ -5,7 +5,7 @@ interface PositionProps {
 }
 
 export class Position extends ValueObject<PositionProps> {
-    constructor(x, y) {
+    constructor(x = 0, y = 0) {
         super({coordinate: x + '-' + y});
     }
 }

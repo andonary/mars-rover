@@ -18,7 +18,7 @@ describe('Rover does not move', () => {
     });
 
     test('Then: position is initial position', () => {
-        const initialPosition: string = new Position(0, 0).getValue();
+        const initialPosition: string = new Position().getValue();
         expect(position).toEqual(initialPosition);
     });
 
